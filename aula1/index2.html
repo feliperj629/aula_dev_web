@@ -9,58 +9,58 @@
     <title>Formulário de Cadastro</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: Arial, sans-serif; /*fonte padrão*/
+            max-width: 600px; /*largura máxima*/
+            margin: 0 auto; /*margem automática*/
+            padding: 20px; /*espaçamento interno*/
         }
 
         form {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9; /*cor de fundo*/
+            padding: 20px; /*espaçamento interno*/
+            border-radius: 8px; /*borda arredondada*/
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*sombra*/
         }
 
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 15px; /*margem inferior*/
         }
 
         label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+            display: block; /*elemento de bloco*/
+            margin-bottom: 5px; /*margem inferior*/
+            font-weight: bold; /*peso da fonte*/
         }
 
         input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
+            width: 100%; /*largura 100%*/
+            padding: 8px; /*espaçamento interno*/
+            border: 1px solid #ddd; /*borda*/
+            border-radius: 4px; /*borda arredondada*/
+            box-sizing: border-box; /*modelo de caixa*/
         }
 
         .buttons {
-            margin-top: 20px;
+            margin-top: 20px; /*margem superior*/
         }
 
         button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: bold;
-            margin-right: 10px;
+            padding: 10px 20px; /*espaçamento interno*/
+            border: none; /*sem borda*/
+            border-radius: 4px; /*borda arredondada*/
+            cursor: pointer; /*cursor*/
+            font-weight: bold; /*peso da fonte*/
+            margin-right: 10px; /*margem direita*/
         }
 
         button[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #4CAF50; /*cor de fundo*/
+            color: white; /*cor do texto*/
         }
 
         button[type="button"] {
-            background-color: #f44336;
-            color: white;
+            background-color: #f44336; /*cor de fundo*/
+            color: white; /*cor do texto*/
         }
     </style>
 </head>
@@ -85,15 +85,17 @@
 
         <div class="buttons">
             <button type="submit">Salvar</button>
-            <button type="button" onclick="limparFormulario()">Excluir</button>
+            <button type="button" onclick="limparFormulario()">Limpar</button>
         </div>
     </form>
 
     <script>
+        // Limpa o formulário
         function limparFormulario() {
             document.getElementById('cadastroForm').reset();
         }
 
+        // Previne o envio do formulário
         document.getElementById('cadastroForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('Dados salvos com sucesso!');
