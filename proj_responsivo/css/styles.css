@@ -9,14 +9,6 @@ label {
     font-weight: bold;
 }
 
-input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
 p {
     font-size: 1.2rem;
     margin-bottom: 0;
